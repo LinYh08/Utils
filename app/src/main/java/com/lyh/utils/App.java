@@ -3,6 +3,7 @@ package com.lyh.utils;
 import android.app.Application;
 
 import com.lyh.utils.base.BaseApp;
+import com.lyh.utils.log.LogWriter;
 
 /**
  * 包名：com.lyh.utils
@@ -25,5 +26,6 @@ public class App extends Application {
         super.onCreate();
         instance = this;
         BaseApp.initAppContext(this);
+        LogWriter.init();
     }
 }
