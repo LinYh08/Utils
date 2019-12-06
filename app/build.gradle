@@ -4,8 +4,9 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
+
         applicationId "com.lyh.utils"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -17,6 +18,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     // Butterknife requires Java 8.
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -36,4 +38,19 @@ dependencies {
     //recyclerView
     api 'androidx.recyclerview:recyclerview:1.1.0'
     api 'androidx.cardview:cardview:1.0.0'
+    //权限认证
+    api 'com.github.tbruyelle:rxpermissions:0.10.2'
+    //Rxbinding
+    api 'com.jakewharton.rxbinding3:rxbinding:3.1.0'
+
+    api 'com.jakewharton.rxbinding3:rxbinding-core:3.1.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-appcompat:3.1.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-drawerlayout:3.1.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-leanback:3.1.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-recyclerview:3.1.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-slidingpanelayout:3.1.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:3.1.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-viewpager:3.1.0'
+    api 'com.jakewharton.rxbinding3:rxbinding-viewpager2:3.1.0'
+
 }
